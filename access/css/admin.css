@@ -1,0 +1,155 @@
+body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;/* Enable flexbox layout */
+            list-style: none;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .top_header {
+            color: #110f0f;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            box-shadow: 0 0 10px rgba(255, 254, 254, 0.692);
+            transition: background-color 0.3s;
+        }
+        .top_header h2 {
+            margin: 0;
+        }
+        
+        .chucnang {
+            display: flex;
+            align-items: center;
+        }
+        
+        .chucnang >span {
+            margin-left: 20px;
+            font-size: 30px;
+            color:#222; /* Set the default color for icons */
+            transition: color 0.3s; /* Add a smooth transition for icon color */
+        }
+        
+        .chucnang >span:hover {
+            color:blue; /* Change the color on hover */
+        }
+        
+
+        .menu_content{
+            display: flex; 
+            border-top: 1px solid rgb(0, 0, 0);
+        }
+        .menu {
+            width: 17%;
+            height: 855px;
+            background-color:rgba(5, 1, 1, 0.952);
+            padding: 0 30px;
+            box-sizing: border-box;
+            /* box-shadow: 0 0 10px rgba(255, 254, 254, 0.692); */
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column; /* Stack menu items vertically */
+            align-items: center; /* Center menu items horizontally */
+            /* transition: background 0.3s ease-in-out; */
+        }
+        /* .menu h2{
+           color: #fff;
+           margin-right: 120px;
+        } */
+ 
+        .menu a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color:#fff ;
+            width:100%;
+            transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+            /* padding: 15px 15px; */
+            height: 80px;
+            font-size: 18px;
+            padding: 0 30px;
+            
+        }
+
+        .menu a i {
+            margin-right: 10px;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .menu a:hover {
+            background-color: #360d79;
+            transition: background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1), border 0.3s ease, color 0.3s ease;
+            border-color: #dacccc;
+            color: red;
+        }
+
+        .menu a.active {
+            font-weight: bold;
+        }
+
+        .content {
+            width:83%;
+            position: relative;
+            background-color:white ;
+            /* margin-left: 1px;  */
+            box-shadow: 0 0 20px rgba(236, 236, 236, 0.692);
+            
+    
+        }.admin-page {
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1300px; /* Adjust the max-width as needed */
+            margin: 0 auto; /* Center the admin page */
+            height: auto; /* Adjust the height as needed */
+        }
+        
+        .dashboard-summary {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Changed to 3 columns */
+            gap: 20px;
+        }
+        
+        .summary-item {
+            background-color: #1f2d3d; /* Darker blue */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s;
+            cursor: pointer;
+            height: 100px;
+            color: white;
+        }
+        
+        .summary-item:hover {
+            background-color: #14222d; /* Even darker blue on hover */
+        }
+        
+        .summary-label {
+            color: #f0f0f0;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .summary-icon {
+            font-size: 32px;
+            color: #f0f0f0; /* White */
+        }
+        
+        .summary-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .admin-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        
+ 

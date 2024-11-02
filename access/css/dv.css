@@ -1,0 +1,225 @@
+.content {
+    padding: 20px;
+    margin: 10px 15%;
+    text-align: center;
+    /* overflow: auto;
+    max-height: 500px;  */
+}
+
+.content-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Service styles */
+/* Service styles */
+.dichvu {
+    border: 1px solid #ccc;
+    width: 30%;
+    height: 295px;
+    text-align: center;
+    margin: 10px; /* Add a smooth transition */
+    overflow: hidden; /* Ensure the container doesn't show overflow content */
+}
+
+.dichvu:hover img {
+    transform: scale(1.03); /* Increase the scale on hover */
+}
+.dichvu:hover{
+    box-shadow: 0 0 10px rgb(8, 7, 7,0.3);
+}
+
+.dichvu-item {
+    text-align: center;
+    color: #555;
+    box-shadow: 0 0 10px rgb(252, 250, 250);
+}
+
+.dichvu-item img {
+    transition: transform 0.3s ease;
+    width: 380px;
+    height:220px;
+}
+
+
+/* Button styles */
+button {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(235, 235, 235);
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* chitietdichvu */
+
+.service-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Service info container */
+/* .abc {
+    border: 2px solid #3498db;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 610px;
+} */
+
+/* Service image */
+.service-image img {
+    width: 700px;
+    height: 400px;
+    border-bottom: 2px solid #3498db;
+}
+
+
+/* Service details text */
+.service-info {
+    padding: 20px;
+}
+.service-details{
+    display: flex; /* Đặt kích thước tối đa cho phần tử chứa ảnh */
+    margin: 0 auto; /* Canh giữa phần tử chứa */
+  }
+
+
+.service-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-price {
+    display: block;
+    margin-top: 10px;
+    color: #27ae60;
+    font-size: 1.2em;
+}
+
+/* Book appointment button */
+.book-appointment {
+    margin-top: 200px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment:hover {
+    background-color: #c0392b;
+}
+
+/* Computer care container */
+.computer-care {
+    width: 30%;
+    background-color: white;
+    border: 2px solid #bdc3c7;
+    text-align: left;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Computer care text */
+.computer-care p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Service commitment, technical support, and service reliability text */
+.service-commitment,
+.technical-support,
+.service-reliability {
+    color: #555;
+}
+.contentt {
+    padding: 20px;
+    margin: 10px 15%;
+}
+
+
+
+/* đặt dịch vụ  */
+/* Apply basic styling to the form container */
+.datdichvu {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+/* Style form labels */
+.datdichvu label {
+    display: block;
+    margin-bottom: 8px;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 5px;
+}
+
+/* Style form input fields */
+.datdichvu input,
+.datdichvu select {
+    width: 80%;
+    padding: 10px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.bt{
+    margin: 0px auto;
+    width: 80%;
+}
+
+/* Style submit button */
+.datdichvu button {
+    background-color: #3fb145;
+    color: #fff;
+    width: 49%;
+    /* margin: 0px auto; */
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+.datdichvu button:hover {
+    background-color: #416443;
+    color: #ccc;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 600px) {
+    .datdichvu {
+        width: 100%;
+    }
+}
+/* Add this to your existing CSS */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's above other elements */
+}

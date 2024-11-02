@@ -1,0 +1,522 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+header{
+  background-color: #ddddd4;
+  height: 80px;
+  width: 100%;
+}
+.hed{
+  margin: 0 15%;
+  display:flex;
+  line-height: 80px;
+  justify-content: space-between;
+}
+.hed img{
+  width: 180px;
+  height: 70px;
+}
+.search-box {
+  margin-top: 15px;
+  display: flex;
+  width: 500px;
+  height: 50px;
+  margin-right: 100px;
+  border: 1px solid #fafaf7;
+  border-radius: 20px;
+}
+.search-box form{
+  display: flex;
+
+}
+
+.search-box input {
+   width: 100%;
+   height: 49px;
+   border: none;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px ;
+   padding-left: 30px;
+  
+}
+
+.search-box button {
+  height: 49px;
+  width: 80px;
+  color: #1f0d0d; /* Màu chữ cho nút tìm kiếm */
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px ;
+}
+/* ------------------------------------------------------------------------- */
+/* nav */
+nav {
+  background-color: black;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+nav.sticky {
+  background-color: #133697; /* Màu nền mới khi thanh nav cố định */
+}
+nav .containers {
+  max-width: 1100px;
+  margin: auto;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 60px;
+}
+
+/* nav ul li {
+  position: relative;
+} */
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 0 15px;
+}
+/* submenu */
+#submenu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  background-color:black;
+  border: 1px solid#000000;
+  color: #000000;
+  line-height: 1.6;
+  margin-top: 9px;
+  transition: all 0.25s ease;
+  padding: 5 25px;
+  left: -40%;
+  position: relative; 
+}
+
+#submenu::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust the position above the submenu */
+  left: 50%;
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+nav ul li:hover #submenu {
+  opacity: 2;
+  visibility: visible;
+}
+
+#submenu li {
+  width: 250px;
+  height: 40px;
+  margin-top: 2px;
+  line-height: 40px;
+}
+
+#submenu a {
+  color: white;
+  display: block;
+}
+
+#submenu li a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Add hover effect to main menu items */
+nav ul li:hover a {
+  color: #f97e0e; 
+}
+/* slider */
+
+
+/* slider */
+.container{
+  max-width: 1250px;
+  margin:auto;
+}
+.slider{
+padding:20px 0;
+height:300px;
+margin-bottom: 150px;
+}
+.slider-content{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+  
+}
+.slider-content-left{
+width:65%;
+}
+.slider-content-left-top{
+  width:100%;
+  height:350px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.slider-content-left-top img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.slider-content-left-bottom{
+  display:flex;
+  justify-content: space-between;
+  border:2px solid#ddd;
+  border-top:none;
+  height:50px;
+}
+.slider-content-left-bottom li{
+  width:35%;
+  text-align: center;
+  cursor: pointer;
+  padding:6px 0;
+  height:100%;
+  line-height: 38px;
+  position: relative;
+  border-bottom:4px solid #bcb8b8;
+  border-top:4px solid #bcb8b8 ;
+}
+.slider-content-left-bottom li::before{
+  display: block;
+  content:"";
+  position: absolute;
+  height:70%;
+  width:1px;
+  background-color: #ddd;
+  right:0;
+}
+.slider-content-left-bottom li.active{
+  border-top:4px solid #f97e0e;
+  font-weight: bold;
+}
+.slider-content-right{
+  background-color: #f97e0e;
+  border-radius: 5px ;
+  width:35%;
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 20px;
+  justify-content: space-around;
+}
+.slider-content-right li{
+  width:50%;
+  height:40%;
+  text-align: center;
+  margin:4px 0;
+}
+.slider-content-right  a{
+  background-color: #f1b151;
+  border-radius: 5px;
+  padding: 4px;
+}
+.slider-content-right :hover a{
+  background-color:#ddd ;
+}
+.slider-content-right li img{
+  width:170px;
+  height:160px;
+  border-radius: 8px;
+}
+.slider-content-left-top-btn{
+  width:100%;
+  position: absolute;
+  top:50%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider-content-left-top-btn i{
+  color:#333;
+  font-size:32px;
+  width:25px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.slider-content-left-top img{
+  position: absolute;
+}
+.slider-content-left-top a:nth-child(2) img{
+  transform: translateX(100%);
+}
+.slider-content-left-top a:nth-child(3) img{
+  transform: translateX(200%);
+}
+.slider-content-left-top-container{
+  position: relative;
+  overflow: hidden;
+}
+.slider-content-left-top-container:hover i{
+  opacity:1;
+}
+/* slider1--------------------------------------------------------------- */
+.slider1{
+  width: 100%;
+  max-width: 100vw;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider1 .list{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+.slider1 .list img{
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.slider1 .buttons{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.slider1 .buttons button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.slider1 .dots{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.slider1 .dots li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider1 .dots li.active{
+  width: 30px;
+}
+.subtitle{
+  justify-content: center; 
+  text-align: center;
+  padding: 25px 0;
+}
+.subtitle p {
+  color:#9a9898;
+  font-size: 15px;
+}
+
+/* end slider--------------------------------------------------------------- */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  overflow: hidden; /* Ẩn phần ngoài container để chỉ hiển thị một ảnh tại một thời điểm */
+}
+
+.image-row img {
+  width: 48%; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+  height: 300px; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+  object-fit: cover; /* Giữ tỷ lệ khung hình và điền hình ảnh trong ô vuông */
+  transition: transform 0.5s ease-in-out; /* Hiệu ứng chuyển đổi */
+}
+
+/* service */
+/* phuongcham */
+.phuongchamcon {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  border-bottom: 2px solid seagreen;
+}
+
+.top-pc,
+.bot-pc {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px; /* Góc bo tròn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+.bot-pcc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bot-pc {
+  width: calc(33.333% - 20px); /* Sắp xếp thành 3 cột với khoảng cách giữa chúng là 20px */
+  margin-top: 20px;
+}
+
+.bot-pc img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Góc bo tròn */
+}
+
+.service_computer {
+  background-color: #f5f5f5; 
+  padding: 20px; 
+}
+.service { 
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; 
+  width: 100%;
+}
+
+.service_item {
+background-color: #FF9900;
+  text-align: center;
+  max-width: 25%;
+  border-radius: 10px;
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service_item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.service_item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  padding:10px 0;
+}
+
+.service_item p {
+  margin-top: 10px;
+}
+
+/* Contact */
+.about {
+  height:400px;
+   
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  background:white;
+}
+
+.about-img img {
+  width: 35vw;
+  border-radius: 15%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+/* footer */
+.footer {
+  background-color: #ddd; /* Màu vàng */
+  color: #d9534f; /* Màu đỏ */
+  padding: 40px 40px; /* Khoảng cách bên trong phần footer */
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-col {
+  flex: 1;
+  text-align: left;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+}
+
+.footer-col p {
+  margin-top: 20px;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+/* Định dạng input và button trong form */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #d9534f; /* Màu đỏ */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
